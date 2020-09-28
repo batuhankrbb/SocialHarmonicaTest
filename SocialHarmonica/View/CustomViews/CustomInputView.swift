@@ -44,7 +44,7 @@ class CustomInputView:UIView{
         textField.anchor(top: topAnchor, leading: imageView.trailingAnchor, bottom: nil, trailing: trailingAnchor,padding: .init(top: 0, left: 10, bottom: 0, right: 2))
         bottomLine.anchor(top: textField.bottomAnchor, leading: leadingAnchor, bottom: bottomAnchor, trailing: trailingAnchor)
         
-        tintColor = Colors.customWhite
+        tintColor = ColorConst.customWhite
     }
     
     required init?(coder: NSCoder) {

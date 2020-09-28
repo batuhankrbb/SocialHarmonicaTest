@@ -14,8 +14,10 @@
 		840E45E02521C26400B898F5 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E45DF2521C26400B898F5 /* Bindable.swift */; };
 		840E45E62521C35A00B898F5 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E45E52521C35A00B898F5 /* SignUpViewModel.swift */; };
 		840E45EE2521CEFD00B898F5 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E45ED2521CEFD00B898F5 /* SignInViewModel.swift */; };
-		840E45F72521D27200B898F5 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E45F62521D27200B898F5 /* AuthService.swift */; };
+		840E45F72521D27200B898F5 /* SignUpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E45F62521D27200B898F5 /* SignUpService.swift */; };
 		840E45FC2521D63800B898F5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E45FB2521D63800B898F5 /* Constants.swift */; };
+		840E46072521E2F800B898F5 /* SHErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E46062521E2F800B898F5 /* SHErrors.swift */; };
+		840E460F2521F04200B898F5 /* SignInService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E460E2521F04200B898F5 /* SignInService.swift */; };
 		8484C0B925205F6B0074F836 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484C0B825205F6B0074F836 /* AppDelegate.swift */; };
 		8484C0BB25205F6B0074F836 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484C0BA25205F6B0074F836 /* SceneDelegate.swift */; };
 		8484C0C025205F6B0074F836 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8484C0BE25205F6B0074F836 /* Main.storyboard */; };
@@ -61,8 +63,10 @@
 		840E45DF2521C26400B898F5 /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
 		840E45E52521C35A00B898F5 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		840E45ED2521CEFD00B898F5 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
-		840E45F62521D27200B898F5 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		840E45F62521D27200B898F5 /* SignUpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpService.swift; sourceTree = "<group>"; };
 		840E45FB2521D63800B898F5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		840E46062521E2F800B898F5 /* SHErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHErrors.swift; sourceTree = "<group>"; };
+		840E460E2521F04200B898F5 /* SignInService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInService.swift; sourceTree = "<group>"; };
 		8484C0B525205F6B0074F836 /* SocialHarmonica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialHarmonica.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8484C0B825205F6B0074F836 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8484C0BA25205F6B0074F836 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -136,6 +140,7 @@
 			children = (
 				840E45DF2521C26400B898F5 /* Bindable.swift */,
 				840E45FB2521D63800B898F5 /* Constants.swift */,
+				840E46062521E2F800B898F5 /* SHErrors.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -152,7 +157,8 @@
 		840E45F22521D18400B898F5 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				840E45F62521D27200B898F5 /* AuthService.swift */,
+				840E45F62521D27200B898F5 /* SignUpService.swift */,
+				840E460E2521F04200B898F5 /* SignInService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -524,12 +530,14 @@
 				840E45D22521944F00B898F5 /* SignUpVC.swift in Sources */,
 				840E45D725219FA100B898F5 /* SignInVC.swift in Sources */,
 				8484C0B925205F6B0074F836 /* AppDelegate.swift in Sources */,
+				840E460F2521F04200B898F5 /* SignInService.swift in Sources */,
 				840E45E62521C35A00B898F5 /* SignUpViewModel.swift in Sources */,
+				840E46072521E2F800B898F5 /* SHErrors.swift in Sources */,
 				8484C15E252077240074F836 /* SignUpView.swift in Sources */,
 				840E45E02521C26400B898F5 /* Bindable.swift in Sources */,
 				8484C0BB25205F6B0074F836 /* SceneDelegate.swift in Sources */,
 				8484C1692520876C0074F836 /* Ext+UIViewController.swift in Sources */,
-				840E45F72521D27200B898F5 /* AuthService.swift in Sources */,
+				840E45F72521D27200B898F5 /* SignUpService.swift in Sources */,
 				8484C17425208D280074F836 /* SignInView.swift in Sources */,
 				8484C1592520743B0074F836 /* CustomInputView.swift in Sources */,
 				840E45FC2521D63800B898F5 /* Constants.swift in Sources */,

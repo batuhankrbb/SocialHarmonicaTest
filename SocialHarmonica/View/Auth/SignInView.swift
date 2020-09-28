@@ -19,7 +19,7 @@ class SignInView:UIView{
       imgView.image = UIImage(systemName: "photo")
         imgView.contentMode = .scaleToFill
       imgView.clipsToBounds = true
-      imgView.tintColor = Colors.customWhite
+      imgView.tintColor = ColorConst.customWhite
       return imgView
   }()
     
@@ -103,7 +103,7 @@ class SignInView:UIView{
      func changeButton(isvalid:Bool){
         signInButton.isEnabled = isvalid
         if isvalid{
-            signInButton.setTitleColor(Colors.customYellow, for: .normal)
+            signInButton.setTitleColor(ColorConst.customYellow, for: .normal)
         }else{
             signInButton.setTitleColor(.gray, for: .normal)
         }

@@ -19,7 +19,7 @@ class CustomLabel:UILabel{
         let attrText = NSMutableAttributedString(string: text, attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: size)])
         attrText.append(NSAttributedString(string: boldText, attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: size + 1, weight: .bold)]))
         attributedText = attrText
-        textColor = Colors.customWhite
+        textColor = ColorConst.customWhite
     }
     
     required init?(coder: NSCoder) {

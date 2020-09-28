@@ -27,7 +27,14 @@ class SignUpVC:UIViewController{
     //MARK: - Selectors
 
     @objc private func signUpClicked(){
-        print("cilcked sign up")
+        SignUpService.shared.createUser(viewModel: viewModel) { (error) in
+            if let error = error{
+                print("CREATING FAILED \(error.localizedDescription)")
+                return
+            }
+                print("CREATED SUCCESFULLY")
+            
+        }
     }
     
     @objc private func selectPhoto(){
@@ -58,7 +65,7 @@ class SignUpVC:UIViewController{
     
     private func configureUI(){
         navigationController?.navigationBar.isHidden = true
-        setGradientBackground(color: Colors.customYellow.cgColor, color2: Colors.customBlue.cgColor)
+        setGradientBackground(color: ColorConst.customYellow.cgColor, color2: ColorConst.customBlue.cgColor)
         view.addSubview(signUpView)
         signUpView.anchor(top: view.topAnchor, leading: view.leadingAnchor, bottom: view.bottomAnchor, trailing: view.trailingAnchor)
     }

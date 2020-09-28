@@ -47,7 +47,7 @@ class SignUpView:UIView{
         imgView.image = UIImage(systemName: "photo")
         
         imgView.isUserInteractionEnabled = true
-        imgView.tintColor = Colors.customWhite
+        imgView.tintColor = ColorConst.customWhite
         imgView.contentMode = .scaleAspectFill
     
         return imgView
@@ -116,7 +116,7 @@ class SignUpView:UIView{
      func changeButton(isvalid:Bool){
         signUpButton.isEnabled = isvalid
         if isvalid{
-            signUpButton.setTitleColor(Colors.customYellow, for: .normal)
+            signUpButton.setTitleColor(ColorConst.customYellow, for: .normal)
         }else{
             signUpButton.setTitleColor(.gray, for: .normal)
         }
