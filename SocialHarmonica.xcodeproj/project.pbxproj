@@ -3,18 +3,36 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0066A5BE5E97303ADD40AD7A /* Pods_SocialHarmonica.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDF9D8942D92780B9D9A309C /* Pods_SocialHarmonica.framework */; };
+		3B06C31E958FBD0A6F3181F3 /* Pods_SocialHarmonica_SocialHarmonicaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6CF4D81C167831DCDD40E36 /* Pods_SocialHarmonica_SocialHarmonicaUITests.framework */; };
+		840E45D22521944F00B898F5 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E45D12521944F00B898F5 /* SignUpVC.swift */; };
+		840E45D725219FA100B898F5 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E45D625219FA100B898F5 /* SignInVC.swift */; };
+		840E45E02521C26400B898F5 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E45DF2521C26400B898F5 /* Bindable.swift */; };
+		840E45E62521C35A00B898F5 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E45E52521C35A00B898F5 /* SignUpViewModel.swift */; };
+		840E45EE2521CEFD00B898F5 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E45ED2521CEFD00B898F5 /* SignInViewModel.swift */; };
+		840E45F72521D27200B898F5 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E45F62521D27200B898F5 /* AuthService.swift */; };
+		840E45FC2521D63800B898F5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E45FB2521D63800B898F5 /* Constants.swift */; };
 		8484C0B925205F6B0074F836 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484C0B825205F6B0074F836 /* AppDelegate.swift */; };
 		8484C0BB25205F6B0074F836 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484C0BA25205F6B0074F836 /* SceneDelegate.swift */; };
-		8484C0BD25205F6B0074F836 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484C0BC25205F6B0074F836 /* ViewController.swift */; };
 		8484C0C025205F6B0074F836 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8484C0BE25205F6B0074F836 /* Main.storyboard */; };
 		8484C0C225205F6C0074F836 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8484C0C125205F6C0074F836 /* Assets.xcassets */; };
 		8484C0C525205F6C0074F836 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8484C0C325205F6C0074F836 /* LaunchScreen.storyboard */; };
 		8484C0D025205F6C0074F836 /* SocialHarmonicaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484C0CF25205F6C0074F836 /* SocialHarmonicaTests.swift */; };
 		8484C0DB25205F6C0074F836 /* SocialHarmonicaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484C0DA25205F6C0074F836 /* SocialHarmonicaUITests.swift */; };
+		8484C10D2520606A0074F836 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8484C10C2520606A0074F836 /* GoogleService-Info.plist */; };
+		8484C1192520638B0074F836 /* Ext+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484C1182520638B0074F836 /* Ext+UIView.swift */; };
+		8484C124252064800074F836 /* Ext+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484C123252064800074F836 /* Ext+UIColor.swift */; };
+		8484C136252067F40074F836 /* MainSongsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484C135252067F40074F836 /* MainSongsListVC.swift */; };
+		8484C1592520743B0074F836 /* CustomInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484C1582520743B0074F836 /* CustomInputView.swift */; };
+		8484C15E252077240074F836 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484C15D252077240074F836 /* SignUpView.swift */; };
+		8484C1692520876C0074F836 /* Ext+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484C1682520876C0074F836 /* Ext+UIViewController.swift */; };
+		8484C16E25208AF40074F836 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484C16D25208AF40074F836 /* CustomLabel.swift */; };
+		8484C17425208D280074F836 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484C17325208D280074F836 /* SignInView.swift */; };
+		D54CFB9DBF9B84FA8F8EB20B /* Pods_SocialHarmonicaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C8F519005C335983FD86D6B /* Pods_SocialHarmonicaTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +53,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C8F519005C335983FD86D6B /* Pods_SocialHarmonicaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialHarmonicaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34D6A5AA3D8746130709E957 /* Pods-SocialHarmonicaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialHarmonicaTests.release.xcconfig"; path = "Target Support Files/Pods-SocialHarmonicaTests/Pods-SocialHarmonicaTests.release.xcconfig"; sourceTree = "<group>"; };
+		6B6CA681A4635E4C497E3FD5 /* Pods-SocialHarmonica-SocialHarmonicaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialHarmonica-SocialHarmonicaUITests.debug.xcconfig"; path = "Target Support Files/Pods-SocialHarmonica-SocialHarmonicaUITests/Pods-SocialHarmonica-SocialHarmonicaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		840E45D12521944F00B898F5 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		840E45D625219FA100B898F5 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		840E45DF2521C26400B898F5 /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
+		840E45E52521C35A00B898F5 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		840E45ED2521CEFD00B898F5 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		840E45F62521D27200B898F5 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		840E45FB2521D63800B898F5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8484C0B525205F6B0074F836 /* SocialHarmonica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialHarmonica.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8484C0B825205F6B0074F836 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8484C0BA25205F6B0074F836 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8484C0BC25205F6B0074F836 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8484C0BF25205F6B0074F836 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8484C0C125205F6C0074F836 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8484C0C425205F6C0074F836 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +76,21 @@
 		8484C0D625205F6C0074F836 /* SocialHarmonicaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialHarmonicaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8484C0DA25205F6C0074F836 /* SocialHarmonicaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialHarmonicaUITests.swift; sourceTree = "<group>"; };
 		8484C0DC25205F6C0074F836 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8484C10C2520606A0074F836 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8484C1182520638B0074F836 /* Ext+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIView.swift"; sourceTree = "<group>"; };
+		8484C123252064800074F836 /* Ext+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIColor.swift"; sourceTree = "<group>"; };
+		8484C135252067F40074F836 /* MainSongsListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSongsListVC.swift; sourceTree = "<group>"; };
+		8484C1582520743B0074F836 /* CustomInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputView.swift; sourceTree = "<group>"; };
+		8484C15D252077240074F836 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		8484C1682520876C0074F836 /* Ext+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIViewController.swift"; sourceTree = "<group>"; };
+		8484C16D25208AF40074F836 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		8484C17325208D280074F836 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		A6CF4D81C167831DCDD40E36 /* Pods_SocialHarmonica_SocialHarmonicaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialHarmonica_SocialHarmonicaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D21B90DAB8407E033CB1724D /* Pods-SocialHarmonicaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialHarmonicaTests.debug.xcconfig"; path = "Target Support Files/Pods-SocialHarmonicaTests/Pods-SocialHarmonicaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D98C854A759CA51FCFEE9EAB /* Pods-SocialHarmonica-SocialHarmonicaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialHarmonica-SocialHarmonicaUITests.release.xcconfig"; path = "Target Support Files/Pods-SocialHarmonica-SocialHarmonicaUITests/Pods-SocialHarmonica-SocialHarmonicaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FAAF4ABB949E630B4954ED5D /* Pods-SocialHarmonica.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialHarmonica.release.xcconfig"; path = "Target Support Files/Pods-SocialHarmonica/Pods-SocialHarmonica.release.xcconfig"; sourceTree = "<group>"; };
+		FB21F10A47F59BE9C093B822 /* Pods-SocialHarmonica.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialHarmonica.debug.xcconfig"; path = "Target Support Files/Pods-SocialHarmonica/Pods-SocialHarmonica.debug.xcconfig"; sourceTree = "<group>"; };
+		FDF9D8942D92780B9D9A309C /* Pods_SocialHarmonica.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialHarmonica.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0066A5BE5E97303ADD40AD7A /* Pods_SocialHarmonica.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D54CFB9DBF9B84FA8F8EB20B /* Pods_SocialHarmonicaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +114,49 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B06C31E958FBD0A6F3181F3 /* Pods_SocialHarmonica_SocialHarmonicaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7429E7C069BCBDB4788BDF83 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FDF9D8942D92780B9D9A309C /* Pods_SocialHarmonica.framework */,
+				A6CF4D81C167831DCDD40E36 /* Pods_SocialHarmonica_SocialHarmonicaUITests.framework */,
+				1C8F519005C335983FD86D6B /* Pods_SocialHarmonicaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		840E45DB2521C25400B898F5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				840E45DF2521C26400B898F5 /* Bindable.swift */,
+				840E45FB2521D63800B898F5 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		840E45E42521C34100B898F5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				840E45E52521C35A00B898F5 /* SignUpViewModel.swift */,
+				840E45ED2521CEFD00B898F5 /* SignInViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		840E45F22521D18400B898F5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				840E45F62521D27200B898F5 /* AuthService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		8484C0AC25205F6B0074F836 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +164,8 @@
 				8484C0CE25205F6C0074F836 /* SocialHarmonicaTests */,
 				8484C0D925205F6C0074F836 /* SocialHarmonicaUITests */,
 				8484C0B625205F6B0074F836 /* Products */,
+				DFE9FB143BC8F4C837FD1AFC /* Pods */,
+				7429E7C069BCBDB4788BDF83 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +182,19 @@
 		8484C0B725205F6B0074F836 /* SocialHarmonica */ = {
 			isa = PBXGroup;
 			children = (
-				8484C0B825205F6B0074F836 /* AppDelegate.swift */,
+				840E45F22521D18400B898F5 /* Services */,
+				840E45E42521C34100B898F5 /* ViewModel */,
+				840E45DB2521C25400B898F5 /* Utils */,
+				8484C134252065D90074F836 /* Controllers */,
+				8484C117252063150074F836 /* Extensions */,
+				8484C1562520740D0074F836 /* View */,
 				8484C0BA25205F6B0074F836 /* SceneDelegate.swift */,
-				8484C0BC25205F6B0074F836 /* ViewController.swift */,
+				8484C0B825205F6B0074F836 /* AppDelegate.swift */,
 				8484C0BE25205F6B0074F836 /* Main.storyboard */,
 				8484C0C125205F6C0074F836 /* Assets.xcassets */,
 				8484C0C325205F6C0074F836 /* LaunchScreen.storyboard */,
 				8484C0C625205F6C0074F836 /* Info.plist */,
+				8484C10C2520606A0074F836 /* GoogleService-Info.plist */,
 			);
 			path = SocialHarmonica;
 			sourceTree = "<group>";
@@ -128,6 +217,66 @@
 			path = SocialHarmonicaUITests;
 			sourceTree = "<group>";
 		};
+		8484C117252063150074F836 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8484C1182520638B0074F836 /* Ext+UIView.swift */,
+				8484C123252064800074F836 /* Ext+UIColor.swift */,
+				8484C1682520876C0074F836 /* Ext+UIViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8484C134252065D90074F836 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8484C135252067F40074F836 /* MainSongsListVC.swift */,
+				840E45D12521944F00B898F5 /* SignUpVC.swift */,
+				840E45D625219FA100B898F5 /* SignInVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8484C1562520740D0074F836 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8484C17225208D1A0074F836 /* Auth */,
+				8484C157252074170074F836 /* CustomViews */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8484C157252074170074F836 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				8484C1582520743B0074F836 /* CustomInputView.swift */,
+				8484C16D25208AF40074F836 /* CustomLabel.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		8484C17225208D1A0074F836 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				8484C15D252077240074F836 /* SignUpView.swift */,
+				8484C17325208D280074F836 /* SignInView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		DFE9FB143BC8F4C837FD1AFC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FB21F10A47F59BE9C093B822 /* Pods-SocialHarmonica.debug.xcconfig */,
+				FAAF4ABB949E630B4954ED5D /* Pods-SocialHarmonica.release.xcconfig */,
+				6B6CA681A4635E4C497E3FD5 /* Pods-SocialHarmonica-SocialHarmonicaUITests.debug.xcconfig */,
+				D98C854A759CA51FCFEE9EAB /* Pods-SocialHarmonica-SocialHarmonicaUITests.release.xcconfig */,
+				D21B90DAB8407E033CB1724D /* Pods-SocialHarmonicaTests.debug.xcconfig */,
+				34D6A5AA3D8746130709E957 /* Pods-SocialHarmonicaTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +284,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8484C0DF25205F6C0074F836 /* Build configuration list for PBXNativeTarget "SocialHarmonica" */;
 			buildPhases = (
+				CC4ADB96A8FD5CFF3795DE4F /* [CP] Check Pods Manifest.lock */,
 				8484C0B125205F6B0074F836 /* Sources */,
 				8484C0B225205F6B0074F836 /* Frameworks */,
 				8484C0B325205F6B0074F836 /* Resources */,
+				83B870C5ECE0EE30188DA90C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +303,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8484C0E225205F6C0074F836 /* Build configuration list for PBXNativeTarget "SocialHarmonicaTests" */;
 			buildPhases = (
+				4FA44D736244393B4EDDA100 /* [CP] Check Pods Manifest.lock */,
 				8484C0C725205F6C0074F836 /* Sources */,
 				8484C0C825205F6C0074F836 /* Frameworks */,
 				8484C0C925205F6C0074F836 /* Resources */,
@@ -170,9 +322,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8484C0E525205F6C0074F836 /* Build configuration list for PBXNativeTarget "SocialHarmonicaUITests" */;
 			buildPhases = (
+				B6ACDCC2E89711B8EC69F787 /* [CP] Check Pods Manifest.lock */,
 				8484C0D225205F6C0074F836 /* Sources */,
 				8484C0D325205F6C0074F836 /* Frameworks */,
 				8484C0D425205F6C0074F836 /* Resources */,
+				40C8025818706A8F266BB137 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,6 +386,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8484C0C525205F6C0074F836 /* LaunchScreen.storyboard in Resources */,
+				8484C10D2520606A0074F836 /* GoogleService-Info.plist in Resources */,
 				8484C0C225205F6C0074F836 /* Assets.xcassets in Resources */,
 				8484C0C025205F6B0074F836 /* Main.storyboard in Resources */,
 			);
@@ -253,14 +408,131 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		40C8025818706A8F266BB137 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SocialHarmonica-SocialHarmonicaUITests/Pods-SocialHarmonica-SocialHarmonicaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SocialHarmonica-SocialHarmonicaUITests/Pods-SocialHarmonica-SocialHarmonicaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SocialHarmonica-SocialHarmonicaUITests/Pods-SocialHarmonica-SocialHarmonicaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4FA44D736244393B4EDDA100 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SocialHarmonicaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83B870C5ECE0EE30188DA90C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SocialHarmonica/Pods-SocialHarmonica-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SocialHarmonica/Pods-SocialHarmonica-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SocialHarmonica/Pods-SocialHarmonica-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6ACDCC2E89711B8EC69F787 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SocialHarmonica-SocialHarmonicaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC4ADB96A8FD5CFF3795DE4F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SocialHarmonica-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8484C0B125205F6B0074F836 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8484C0BD25205F6B0074F836 /* ViewController.swift in Sources */,
+				8484C124252064800074F836 /* Ext+UIColor.swift in Sources */,
+				8484C16E25208AF40074F836 /* CustomLabel.swift in Sources */,
+				8484C1192520638B0074F836 /* Ext+UIView.swift in Sources */,
+				8484C136252067F40074F836 /* MainSongsListVC.swift in Sources */,
+				840E45EE2521CEFD00B898F5 /* SignInViewModel.swift in Sources */,
+				840E45D22521944F00B898F5 /* SignUpVC.swift in Sources */,
+				840E45D725219FA100B898F5 /* SignInVC.swift in Sources */,
 				8484C0B925205F6B0074F836 /* AppDelegate.swift in Sources */,
+				840E45E62521C35A00B898F5 /* SignUpViewModel.swift in Sources */,
+				8484C15E252077240074F836 /* SignUpView.swift in Sources */,
+				840E45E02521C26400B898F5 /* Bindable.swift in Sources */,
 				8484C0BB25205F6B0074F836 /* SceneDelegate.swift in Sources */,
+				8484C1692520876C0074F836 /* Ext+UIViewController.swift in Sources */,
+				840E45F72521D27200B898F5 /* AuthService.swift in Sources */,
+				8484C17425208D280074F836 /* SignInView.swift in Sources */,
+				8484C1592520743B0074F836 /* CustomInputView.swift in Sources */,
+				840E45FC2521D63800B898F5 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +705,7 @@
 		};
 		8484C0E025205F6C0074F836 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB21F10A47F59BE9C093B822 /* Pods-SocialHarmonica.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +725,7 @@
 		};
 		8484C0E125205F6C0074F836 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAAF4ABB949E630B4954ED5D /* Pods-SocialHarmonica.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,6 +745,7 @@
 		};
 		8484C0E325205F6C0074F836 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D21B90DAB8407E033CB1724D /* Pods-SocialHarmonicaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +768,7 @@
 		};
 		8484C0E425205F6C0074F836 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34D6A5AA3D8746130709E957 /* Pods-SocialHarmonicaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +791,7 @@
 		};
 		8484C0E625205F6C0074F836 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B6CA681A4635E4C497E3FD5 /* Pods-SocialHarmonica-SocialHarmonicaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +812,7 @@
 		};
 		8484C0E725205F6C0074F836 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D98C854A759CA51FCFEE9EAB /* Pods-SocialHarmonica-SocialHarmonicaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
