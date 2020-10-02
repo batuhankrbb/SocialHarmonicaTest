@@ -71,10 +71,6 @@ class SignUpVC:UIViewController{
     }
     
     private func addTargets(){
-        //        signUpView.fullNameTextField.addTarget(self, action: #selector(textChanged(textfield:)), for: .editingChanged)
-        //        signUpView.mailTextField.addTarget(self, action: #selector(textChanged(textfield:)), for: .editingChanged)
-        //        signUpView.passwordTextField.addTarget(self, action: #selector(textChanged(textfield:)), for: .editingChanged)
-        //        signUpView.usernameTextField.addTarget(self, action: #selector(textChanged(textfield:)), for: .editingChanged)
         [signUpView.fullNameTextField,signUpView.mailTextField,signUpView.passwordTextField,signUpView.usernameTextField].forEach({textfield in
             textfield.addTarget(self, action: #selector(textChanged(textfield:)), for: .editingChanged)
         })

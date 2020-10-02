@@ -42,21 +42,21 @@ class SignUpView:UIView{
         return customAuthTF
     }()
     
-      var selectPhotoImageView:UIImageView = {
+      lazy var selectPhotoImageView:UIImageView = {
         var imgView = UIImageView()
         imgView.image = UIImage(systemName: "photo")
-        
+        imgView.backgroundColor = .red
         imgView.isUserInteractionEnabled = true
         imgView.tintColor = ColorConst.customWhite
-        imgView.contentMode = .scaleAspectFill
-    
+        imgView.contentMode = .scaleAspectFit
+        imgView.layer.masksToBounds = true
         return imgView
     }()
     
      lazy var signUpButton:UIButton = {
         let btn = UIButton(type: .system)
         btn.setTitle("Sign Up", for: .normal)
-        btn.titleLabel?.font = UIFont.systemFont(ofSize: 30)
+        btn.titleLabel?.font = UIFont.systemFont(ofSize: 27)
         btn.setTitleColor(.gray, for: .normal)
         btn.isEnabled = false
         return btn
@@ -68,11 +68,7 @@ class SignUpView:UIView{
         customLabel.isUserInteractionEnabled = true
         return customLabel
     }()
-
     
-   
-    
-    //MARK: - Lifecycle
     override init(frame: CGRect) {
         super.init(frame: frame)
         configureUI()
@@ -88,27 +84,27 @@ class SignUpView:UIView{
     
     private func configureUI(){
         
+        let buttonStackView = UIStackView(arrangedSubviews: [signUpButton,signInPresentButton])
+        buttonStackView.axis = .vertical
+        buttonStackView.spacing = 6
         
-        let inputStackView = UIStackView(arrangedSubviews: [mailInputView,fullNameInputView,usernameInputView,passwordInputView])
+        
+        selectPhotoImageView.setHeight(number: UIScreen.main.bounds.size.height * 0.3)
+        let inputStackView = UIStackView(arrangedSubviews: [mailInputView,fullNameInputView,usernameInputView,passwordInputView,buttonStackView])
         inputStackView.axis = .vertical
-        inputStackView.spacing = 30
+        inputStackView.spacing = 25
+        
+        
+        
         
         addSubview(selectPhotoImageView)
-        selectPhotoImageView.anchor(top: safeAreaLayoutGuide.topAnchor, leading: nil, bottom: nil, trailing: nil,padding: .init(top: 30, left: 0, bottom: 20, right: 0),size: .init(width: 320, height: 200))
-        selectPhotoImageView.setCenterX(anchor: centerXAnchor)
-    
-        
+        selectPhotoImageView.anchor(top: safeAreaLayoutGuide.topAnchor, leading: leadingAnchor, bottom: nil, trailing: trailingAnchor,padding: .init(top: 30, left: 30, bottom: 0, right: 30))
         
         addSubview(inputStackView)
-        inputStackView.anchor(top: selectPhotoImageView.bottomAnchor, leading: leadingAnchor, bottom: nil, trailing: trailingAnchor,padding: .init(top: 30, left: 50, bottom: 0, right: 70))
+        inputStackView.anchor(top: selectPhotoImageView.bottomAnchor, leading: leadingAnchor, bottom: nil, trailing: trailingAnchor,padding: .init(top: 30, left: 30, bottom: 0, right: 30))
         
+       
         
-        addSubview(signUpButton)
-        signUpButton.anchor(top: inputStackView.bottomAnchor, leading: leadingAnchor, bottom: nil, trailing: trailingAnchor,padding: .init(top: 10, left: 50, bottom: 0, right: 50))
-        
-        addSubview(signInPresentButton)
-        signInPresentButton.setCenterX(anchor: centerXAnchor)
-        signInPresentButton.anchor(top: signUpButton.bottomAnchor, leading: nil, bottom: safeAreaLayoutGuide.bottomAnchor, trailing: nil,padding: .init(top: 8, left: 0, bottom: 100, right: 0))
         
      
     }
@@ -122,4 +118,3 @@ class SignUpView:UIView{
         }
     }
 }
-

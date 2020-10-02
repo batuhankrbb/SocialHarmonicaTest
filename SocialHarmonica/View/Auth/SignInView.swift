@@ -20,6 +20,7 @@ class SignInView:UIView{
         imgView.contentMode = .scaleToFill
       imgView.clipsToBounds = true
       imgView.tintColor = ColorConst.customWhite
+        imgView.image = UIImage(systemName: "person")
       return imgView
   }()
     

@@ -22,7 +22,7 @@ enum StorageConst{
     static let randomPhotoName = "\(UUID().uuidString).jpg"
 }
 
-enum FirestoreConst{
+enum fs_PROFILE{
     static let HARMONICA_SONGS = "HarmonicaSongs"
     static let USERS = "Users"
     static let FAVORITE_SONGS = "FavoriteSongs"
@@ -36,8 +36,19 @@ enum FirestoreConst{
     static let userMail = "UserMail"
     static let userName = "UserName"
     static let profilePhoto = "ProfilePhoto"
+    static let UsersPath = Firestore.firestore().collection(fs_PROFILE.USERS)
 }
 
-enum FirestorePathsConst{
-    static let UsersPath = Firestore.firestore().collection(FirestoreConst.USERS)
+enum fs_HARMONICA{
+    static let harmonicaType = "HarmonicaType"
+    static let songID = "SongID"
+    static let harmonicaKey = "HarmonicaKey"
+    static let songName = "SongName"
+    static let commentNumber = "CommentNumber"
+    static let creationDate = "CreationDate"
+    static let creatorID = "CreatorID"
+    static let tabs = "tabs"
+    static let harmonicaPath = Firestore.firestore().collection("HarmonicaSongs")
 }
+
+

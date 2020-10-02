@@ -40,24 +40,26 @@ class SignUpService{
                         return
                     }
                 }
-                
-                //UPLOAD FIREBASE
-                self.saveToFirestore(result: result!, fullname: viewModel.fullname!, mail: viewModel.email!, username: viewModel.username!, url: url!) { (error) in
-                    if let error = error{
-                        handler(error)
-                        return
+                    
+                    //UPLOAD FIREBASE
+                    self.saveToFirestore(result: result!, fullname: viewModel.fullname!, mail: viewModel.email!, username: viewModel.username!, url: url!) { (error) in
+                        if let error = error{
+                            handler(error)
+                            return
+                        }
                     }
                     
-                }
+                    //SENDING VERIFICATION
+                    self.sendEmailVerification(result: result!) { (error) in
+                        if let error = error{
+                            handler(error)
+                            return
+                        }
+                    }
             }
-            
-            self.sendEmailVerification(result: result!) { (error) in
-                if let error = error{
-                    handler(error)
-                    return
-                }
-            }
+            handler(nil)
         }
+        
     }
     
     private func sendEmailVerification(result:AuthDataResult, completionHandler handler: @escaping (Error?) -> ()){
@@ -85,7 +87,7 @@ class SignUpService{
         })
     }
     
-
+    
     
     private  func uploadPhoto(photo:UIImage,result:AuthDataResult, completionHandler handler: @escaping (Error?,URL?) -> ()){
         let reference =  Storage.storage().reference(withPath: StorageConst.userPhotos).child(StorageConst.randomPhotoName)
@@ -106,28 +108,30 @@ class SignUpService{
                     handler(error,nil)
                     return
                 }
-                guard let url = url else{
+                if let url = url{
+                    handler(nil,url)
+                }else{
                     debugPrint("Error occured in StoragePhoto3 \(SHError.damagedPhotoURL)")
                     handler(SHError.damagedPhotoURL,nil)
                     return
                 }
-                handler(nil,url)
+                
             }
         }
     }
     
-   private func saveToFirestore(result:AuthDataResult,fullname:String,mail:String,username:String,url:URL,completionHandler handler: @escaping (Error?) -> ()){
-        let dataForSave = [FirestoreConst.biography: "Hello, I'm using Social Harmonica!",
-                           FirestoreConst.creationDate:Date(),
-                           FirestoreConst.fullName:fullname,
-                           FirestoreConst.numberOfSongs:0,
-                           FirestoreConst.reputation:0,
-                           FirestoreConst.userID:result.user.uid,
-                           FirestoreConst.userMail:mail,
-                           FirestoreConst.userName:username,
-                           FirestoreConst.profilePhoto:url.absoluteString] as [String : Any]
+    private func saveToFirestore(result:AuthDataResult,fullname:String,mail:String,username:String,url:URL,completionHandler handler: @escaping (Error?) -> ()){
+        let dataForSave = [fs_PROFILE.biography: "Hello, I'm using Social Harmonica!",
+                           fs_PROFILE.creationDate:Date(),
+                           fs_PROFILE.fullName:fullname,
+                           fs_PROFILE.numberOfSongs:0,
+                           fs_PROFILE.reputation:0,
+                           fs_PROFILE.userID:result.user.uid,
+                           fs_PROFILE.userMail:mail,
+                           fs_PROFILE.userName:username,
+                           fs_PROFILE.profilePhoto:url.absoluteString] as [String : Any]
         
-        FirestorePathsConst.UsersPath.document(result.user.uid).setData(dataForSave) { (error) in
+        fs_PROFILE.UsersPath.document(result.user.uid).setData(dataForSave) { (error) in
             if let error = error{
                 debugPrint("Error occured in saveToFirestore \(error.localizedDescription)")
                 self.deleteUser(user: result.user)
@@ -137,8 +141,8 @@ class SignUpService{
         }
     }
     
-   private func deleteUser(user:User){
-        FirestorePathsConst.UsersPath.document(user.uid).delete()
+    private func deleteUser(user:User){
+        fs_PROFILE.UsersPath.document(user.uid).delete()
         if let photoURL = user.photoURL?.absoluteString{
             let reference = Storage.storage().reference(forURL: photoURL)
             reference.delete()
@@ -150,13 +154,14 @@ class SignUpService{
         Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
             if let error = error{
                 debugPrint("Error occured in CreateUserAuth \(error.localizedDescription)")
-                self.deleteUser(user: result!.user)
                 handler(nil,error)
                 return
+            }else{
+                handler(result,nil)
             }
-            handler(result,nil)
+            
+        }
     }
-}
     
 }
 

@@ -40,7 +40,6 @@ class SignInVC:UIViewController{
                     print("Error in Password forget \(error.localizedDescription)")
                 }
             }
-            self.dismiss(animated: true, completion: nil)
         }
         
         alert.addAction(resetPassword)
@@ -51,10 +50,11 @@ class SignInVC:UIViewController{
         SignInService.shared.signIn(viewModel: viewModel) { (error) in
             if let error = error{
                 print("LOGIN FAILED \(error.localizedDescription)")
-            }else{
-                print("LOGIN SUCCEEDED")
+                return
             }
+                print("LOGIN SUCCEEDED")
         }
+       
     }
     
     @objc private func presentSignUp(){

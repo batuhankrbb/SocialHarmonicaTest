@@ -20,6 +20,8 @@ class CustomLabel:UILabel{
         attrText.append(NSAttributedString(string: boldText, attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: size + 1, weight: .bold)]))
         attributedText = attrText
         textColor = ColorConst.customWhite
+        textAlignment = .center
+        adjustsFontSizeToFitWidth = true
     }
     
     required init?(coder: NSCoder) {

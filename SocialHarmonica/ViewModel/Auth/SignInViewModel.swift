@@ -13,6 +13,7 @@ class SignInViewModel{
     var email:String?{
         didSet{
             checkDataIsValid()
+            email = email?.lowercased()
         }
     }
     

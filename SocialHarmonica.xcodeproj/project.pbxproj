@@ -18,6 +18,8 @@
 		840E45FC2521D63800B898F5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E45FB2521D63800B898F5 /* Constants.swift */; };
 		840E46072521E2F800B898F5 /* SHErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E46062521E2F800B898F5 /* SHErrors.swift */; };
 		840E460F2521F04200B898F5 /* SignInService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E460E2521F04200B898F5 /* SignInService.swift */; };
+		8441C1B32526DCDD00395AC2 /* HarmonicaSongDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8441C1B22526DCDD00395AC2 /* HarmonicaSongDetails.swift */; };
+		8441C1BB2526E5A500395AC2 /* HarmonicaSongDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8441C1BA2526E5A500395AC2 /* HarmonicaSongDetailsView.swift */; };
 		8484C0B925205F6B0074F836 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484C0B825205F6B0074F836 /* AppDelegate.swift */; };
 		8484C0BB25205F6B0074F836 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484C0BA25205F6B0074F836 /* SceneDelegate.swift */; };
 		8484C0C025205F6B0074F836 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8484C0BE25205F6B0074F836 /* Main.storyboard */; };
@@ -34,6 +36,12 @@
 		8484C1692520876C0074F836 /* Ext+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484C1682520876C0074F836 /* Ext+UIViewController.swift */; };
 		8484C16E25208AF40074F836 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484C16D25208AF40074F836 /* CustomLabel.swift */; };
 		8484C17425208D280074F836 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484C17325208D280074F836 /* SignInView.swift */; };
+		84BDD11D2525ED11006E85A4 /* HarmonicaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BDD11C2525ED11006E85A4 /* HarmonicaService.swift */; };
+		84BDD1222525F5E8006E85A4 /* SongCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BDD1212525F5E8006E85A4 /* SongCell.swift */; };
+		84BDD128252606AE006E85A4 /* HarmonicaSong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BDD127252606AE006E85A4 /* HarmonicaSong.swift */; };
+		84BDD12D2526082A006E85A4 /* HarmonicaConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BDD12C2526082A006E85A4 /* HarmonicaConstants.swift */; };
+		84BDD132252619A9006E85A4 /* Ext+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BDD131252619A9006E85A4 /* Ext+Date.swift */; };
+		84BDD13725261B90006E85A4 /* HarmonicaSongsViewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BDD13625261B90006E85A4 /* HarmonicaSongsViewmodel.swift */; };
 		D54CFB9DBF9B84FA8F8EB20B /* Pods_SocialHarmonicaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C8F519005C335983FD86D6B /* Pods_SocialHarmonicaTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +75,8 @@
 		840E45FB2521D63800B898F5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		840E46062521E2F800B898F5 /* SHErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHErrors.swift; sourceTree = "<group>"; };
 		840E460E2521F04200B898F5 /* SignInService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInService.swift; sourceTree = "<group>"; };
+		8441C1B22526DCDD00395AC2 /* HarmonicaSongDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarmonicaSongDetails.swift; sourceTree = "<group>"; };
+		8441C1BA2526E5A500395AC2 /* HarmonicaSongDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarmonicaSongDetailsView.swift; sourceTree = "<group>"; };
 		8484C0B525205F6B0074F836 /* SocialHarmonica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialHarmonica.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8484C0B825205F6B0074F836 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8484C0BA25205F6B0074F836 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +99,12 @@
 		8484C1682520876C0074F836 /* Ext+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIViewController.swift"; sourceTree = "<group>"; };
 		8484C16D25208AF40074F836 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		8484C17325208D280074F836 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		84BDD11C2525ED11006E85A4 /* HarmonicaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarmonicaService.swift; sourceTree = "<group>"; };
+		84BDD1212525F5E8006E85A4 /* SongCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongCell.swift; sourceTree = "<group>"; };
+		84BDD127252606AE006E85A4 /* HarmonicaSong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarmonicaSong.swift; sourceTree = "<group>"; };
+		84BDD12C2526082A006E85A4 /* HarmonicaConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarmonicaConstants.swift; sourceTree = "<group>"; };
+		84BDD131252619A9006E85A4 /* Ext+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+Date.swift"; sourceTree = "<group>"; };
+		84BDD13625261B90006E85A4 /* HarmonicaSongsViewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarmonicaSongsViewmodel.swift; sourceTree = "<group>"; };
 		A6CF4D81C167831DCDD40E36 /* Pods_SocialHarmonica_SocialHarmonicaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialHarmonica_SocialHarmonicaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D21B90DAB8407E033CB1724D /* Pods-SocialHarmonicaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialHarmonicaTests.debug.xcconfig"; path = "Target Support Files/Pods-SocialHarmonicaTests/Pods-SocialHarmonicaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D98C854A759CA51FCFEE9EAB /* Pods-SocialHarmonica-SocialHarmonicaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialHarmonica-SocialHarmonicaUITests.release.xcconfig"; path = "Target Support Files/Pods-SocialHarmonica-SocialHarmonicaUITests/Pods-SocialHarmonica-SocialHarmonicaUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -138,8 +154,8 @@
 		840E45DB2521C25400B898F5 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				84BDD14125261F2E006E85A4 /* Constants */,
 				840E45DF2521C26400B898F5 /* Bindable.swift */,
-				840E45FB2521D63800B898F5 /* Constants.swift */,
 				840E46062521E2F800B898F5 /* SHErrors.swift */,
 			);
 			path = Utils;
@@ -148,8 +164,8 @@
 		840E45E42521C34100B898F5 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				840E45E52521C35A00B898F5 /* SignUpViewModel.swift */,
-				840E45ED2521CEFD00B898F5 /* SignInViewModel.swift */,
+				84BDD1462526D4A1006E85A4 /* Auth */,
+				84BDD13625261B90006E85A4 /* HarmonicaSongsViewmodel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -157,10 +173,19 @@
 		840E45F22521D18400B898F5 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				840E45F62521D27200B898F5 /* SignUpService.swift */,
-				840E460E2521F04200B898F5 /* SignInService.swift */,
+				84BDD1452526D409006E85A4 /* Auth */,
+				84BDD11C2525ED11006E85A4 /* HarmonicaService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		8441C1B12526DCB500395AC2 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				840E45D12521944F00B898F5 /* SignUpVC.swift */,
+				840E45D625219FA100B898F5 /* SignInVC.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		8484C0AC25205F6B0074F836 = {
@@ -188,6 +213,7 @@
 		8484C0B725205F6B0074F836 /* SocialHarmonica */ = {
 			isa = PBXGroup;
 			children = (
+				84BDD1262526069D006E85A4 /* Model */,
 				840E45F22521D18400B898F5 /* Services */,
 				840E45E42521C34100B898F5 /* ViewModel */,
 				840E45DB2521C25400B898F5 /* Utils */,
@@ -229,6 +255,7 @@
 				8484C1182520638B0074F836 /* Ext+UIView.swift */,
 				8484C123252064800074F836 /* Ext+UIColor.swift */,
 				8484C1682520876C0074F836 /* Ext+UIViewController.swift */,
+				84BDD131252619A9006E85A4 /* Ext+Date.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -236,9 +263,9 @@
 		8484C134252065D90074F836 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8441C1B12526DCB500395AC2 /* Auth */,
 				8484C135252067F40074F836 /* MainSongsListVC.swift */,
-				840E45D12521944F00B898F5 /* SignUpVC.swift */,
-				840E45D625219FA100B898F5 /* SignInVC.swift */,
+				8441C1B22526DCDD00395AC2 /* HarmonicaSongDetails.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -246,8 +273,10 @@
 		8484C1562520740D0074F836 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				84F8F6FD2524D60700AD21D3 /* Cells */,
 				8484C17225208D1A0074F836 /* Auth */,
 				8484C157252074170074F836 /* CustomViews */,
+				8441C1BA2526E5A500395AC2 /* HarmonicaSongDetailsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -268,6 +297,49 @@
 				8484C17325208D280074F836 /* SignInView.swift */,
 			);
 			path = Auth;
+			sourceTree = "<group>";
+		};
+		84BDD1262526069D006E85A4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84BDD127252606AE006E85A4 /* HarmonicaSong.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84BDD14125261F2E006E85A4 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				84BDD12C2526082A006E85A4 /* HarmonicaConstants.swift */,
+				840E45FB2521D63800B898F5 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		84BDD1452526D409006E85A4 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				840E460E2521F04200B898F5 /* SignInService.swift */,
+				840E45F62521D27200B898F5 /* SignUpService.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		84BDD1462526D4A1006E85A4 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				840E45E52521C35A00B898F5 /* SignUpViewModel.swift */,
+				840E45ED2521CEFD00B898F5 /* SignInViewModel.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		84F8F6FD2524D60700AD21D3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				84BDD1212525F5E8006E85A4 /* SongCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		DFE9FB143BC8F4C837FD1AFC /* Pods */ = {
@@ -525,15 +597,21 @@
 				8484C124252064800074F836 /* Ext+UIColor.swift in Sources */,
 				8484C16E25208AF40074F836 /* CustomLabel.swift in Sources */,
 				8484C1192520638B0074F836 /* Ext+UIView.swift in Sources */,
+				84BDD132252619A9006E85A4 /* Ext+Date.swift in Sources */,
 				8484C136252067F40074F836 /* MainSongsListVC.swift in Sources */,
 				840E45EE2521CEFD00B898F5 /* SignInViewModel.swift in Sources */,
 				840E45D22521944F00B898F5 /* SignUpVC.swift in Sources */,
+				84BDD13725261B90006E85A4 /* HarmonicaSongsViewmodel.swift in Sources */,
+				8441C1BB2526E5A500395AC2 /* HarmonicaSongDetailsView.swift in Sources */,
 				840E45D725219FA100B898F5 /* SignInVC.swift in Sources */,
 				8484C0B925205F6B0074F836 /* AppDelegate.swift in Sources */,
 				840E460F2521F04200B898F5 /* SignInService.swift in Sources */,
 				840E45E62521C35A00B898F5 /* SignUpViewModel.swift in Sources */,
+				84BDD12D2526082A006E85A4 /* HarmonicaConstants.swift in Sources */,
+				84BDD1222525F5E8006E85A4 /* SongCell.swift in Sources */,
 				840E46072521E2F800B898F5 /* SHErrors.swift in Sources */,
 				8484C15E252077240074F836 /* SignUpView.swift in Sources */,
+				84BDD11D2525ED11006E85A4 /* HarmonicaService.swift in Sources */,
 				840E45E02521C26400B898F5 /* Bindable.swift in Sources */,
 				8484C0BB25205F6B0074F836 /* SceneDelegate.swift in Sources */,
 				8484C1692520876C0074F836 /* Ext+UIViewController.swift in Sources */,
@@ -541,6 +619,8 @@
 				8484C17425208D280074F836 /* SignInView.swift in Sources */,
 				8484C1592520743B0074F836 /* CustomInputView.swift in Sources */,
 				840E45FC2521D63800B898F5 /* Constants.swift in Sources */,
+				8441C1B32526DCDD00395AC2 /* HarmonicaSongDetails.swift in Sources */,
+				84BDD128252606AE006E85A4 /* HarmonicaSong.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

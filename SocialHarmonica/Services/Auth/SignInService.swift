@@ -18,15 +18,17 @@ class SignInService{
     func signIn(viewModel:SignInViewModel, completionHandler handler: @escaping (Error?) -> ()){
         viewModel.checkDataIsValid()
         guard viewModel.isValid.value == true else {handler(SHError.missingInformation);return}
-        
         self.signInAuth(email: viewModel.email!, password: viewModel.password!) { (result, error) in
             if let error = error{
                 handler(error)
                 return
-            }
-            self.checkEmail(result: result!) { (error) in
-                handler(error)
-                return
+            }else{
+                if result?.user.isEmailVerified == false{
+                    handler(SHError.emailNotVerified)
+                    try? Auth.auth().signOut()
+                    return
+                }
+                handler(nil)
             }
         }
     }
@@ -39,6 +41,7 @@ class SignInService{
     private func checkEmail(result:AuthDataResult,completionHandler handler: @escaping (Error?) -> ()){
         if result.user.isEmailVerified == false{
             try? Auth.auth().signOut()
+            
             handler(SHError.emailNotVerified)
         }
     }
@@ -50,8 +53,28 @@ class SignInService{
                 handler(nil,error)
                 return
             }
-            handler(result,nil)
+                handler(result,nil)
         }
     }
     
 }
+
+
+/*
+ func signIn(viewModel:SignInViewModel, completionHandler handler: @escaping (Error?) -> ()){
+     viewModel.checkDataIsValid()
+     guard viewModel.isValid.value == true else {handler(SHError.missingInformation);return}
+     self.signInAuth(email: viewModel.email!, password: viewModel.password!) { (result, error) in
+         if let error = error{
+             handler(error)
+             return
+         }
+         self.checkEmail(result: result!) { (error) in
+             if let error = error{
+                 handler(error)
+                 return
+             }
+         }
+     }
+ }
+ */

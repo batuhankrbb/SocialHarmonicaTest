@@ -13,6 +13,7 @@ class SignUpViewModel{
     var email:String?{
         didSet{
             checkDataIsValid()
+            email = email?.lowercased()
         }
     }
     var password:String?{
@@ -28,6 +29,7 @@ class SignUpViewModel{
     var username:String?{
         didSet{
             checkDataIsValid()
+            username = username?.lowercased()
         }
     }
     var photo = Bindable<UIImage>()
